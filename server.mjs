@@ -4,7 +4,7 @@ import cors from "cors";
 const app = express();
 app.use(cors())
 
-app.get("/weatherApp/:cityname",(req ,res) => { 
+app.get("/api/weatherApp/:cityname",(req ,res) => { 
     const cityname = req.params.cityname.toLowerCase();
     let  apiRes = {};
     let cities = [
